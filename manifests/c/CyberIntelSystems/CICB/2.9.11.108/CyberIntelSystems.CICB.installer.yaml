@@ -1,0 +1,42 @@
+# Created using wingetcreate 1.6.5.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.6.0.schema.json
+
+PackageIdentifier: CyberIntelSystems.CICB
+PackageVersion: 2.9.11.108
+Platform:
+- Windows.Desktop
+MinimumOSVersion: 10.0.0.0
+InstallerType: msi
+Scope: machine
+InstallModes:
+- interactive
+- silent
+- silentWithProgress
+InstallerSwitches:
+  Silent: /quiet /norestart
+  SilentWithProgress: /passive /norestart
+  Custom: /norestart
+UpgradeBehavior: install
+Dependencies:
+  PackageDependencies:
+  - PackageIdentifier: Microsoft.VCRedist.2015+.x64
+ReleaseDate: 2026-02-03
+Installers:
+- Architecture: x64
+  InstallerType: wix
+  InstallerUrl: https://github.com/cyberintelsystems/cicb/releases/download/v2.9.11.108/CICBv2-Win-v2.9.11.108.msi
+  InstallerSha256: C6F9258D662464B4CDCCF27544ED83A4A532EAC4B4945C4F59E2E13FAC2B2C5C
+  ProductCode: '{92EBF6DA-689B-4337-BC81-DE91436F49D3}'
+  AppsAndFeaturesEntries:
+  - DisplayName: Cyber Intel Classification Banner
+    Publisher: CYBER INTEL SYSTEMS
+    DisplayVersion: 2.9.11.108
+    ProductCode: '{92EBF6DA-689B-4337-BC81-DE91436F49D3}'
+ManifestType: installer
+ManifestVersion: 1.6.0
+
+
+
+
+
+
